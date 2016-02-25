@@ -1,0 +1,1 @@
+module.exports = require("npm:findup-sync@0.2.1/lib/findup-sync");

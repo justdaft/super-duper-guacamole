@@ -1,0 +1,1 @@
+module.exports = require("npm:material-design-lite@1.1.1/dist/material.min.js");

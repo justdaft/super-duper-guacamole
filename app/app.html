@@ -1,0 +1,41 @@
+<div class="mdl-cell mdl-cell--6-col">
+  <div class="item-card mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      Create a game
+    </div>
+    <div class="mdl-card__supporting-text">
+
+    </div>
+  </div>
+  <br/>
+  <div class="item-card mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      Games
+    </div>
+    <div class="mdl-card__supporting-text">
+
+    </div>
+    <div>
+      <game-list [games]="viewModel.games" [completedGames]="viewModel.completedGames" [totalGames]="viewModel.totalGames" (toggleGame)="gamesActions.toggleGame($event)" (addGame)="gamesActions.addGame($event)" (visibility)="visibilityFilterActions.setVisibilityFilter($event)">
+      </game-list>
+    </div>
+    <div></div>
+    <!-- <div class="mdl-card__actions mdl-card--border">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                <input type="radio" id="option-1" (click)="show('ALL')" class="mdl-radio__button" name="options" value="1" checked>
+                <span class="mdl-radio__label">All</span>
+            </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                <input type="radio" id="option-2" (click)="show('PENDING')" class="mdl-radio__button" name="options" value="2">
+                <span class="mdl-radio__label">Pending</span>
+            </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                <input type="radio" id="option-3" (click)="show('COMPLETE')" class="mdl-radio__button" name="options" value="3">
+                <span class="mdl-radio__label">Complete</span>
+            </label>
+        </div> -->
+  </div>
+</div>
+<div class="mdl-cell mdl-cell--6-col ">
+  <!-- <log-monitor></log-monitor> -->
+</div>

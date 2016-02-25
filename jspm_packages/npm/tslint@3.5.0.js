@@ -1,0 +1,1 @@
+module.exports = require("npm:tslint@3.5.0/lib/tslint");

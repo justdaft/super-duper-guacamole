@@ -1,0 +1,1 @@
+module.exports = require("npm:underscore.string@3.1.1/index.js");
